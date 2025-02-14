@@ -3,6 +3,8 @@ import { Invoice } from './data/types'
 
 function App() {
   const savedInvoice = window.localStorage.getItem('invoiceData')
+
+  console.log("saved invoice",savedInvoice)
   let data = null
 
   try {
@@ -13,6 +15,7 @@ function App() {
 
   const onInvoiceUpdated = (invoice: Invoice) => {
     window.localStorage.setItem('invoiceData', JSON.stringify(invoice))
+    console.log("finall app update date",invoice)
   }
 
   return (

@@ -1,6 +1,7 @@
 import React, { FC } from 'react'
 import { PDFDownloadLink } from '@react-pdf/renderer'
 import { Invoice } from '../data/types'
+
 import InvoicePage from './InvoicePage'
 
 interface Props {
@@ -11,7 +12,7 @@ interface Props {
 const Download: FC<Props> = ({ data }) => {
   const title = data.invoiceTitle ? data.invoiceTitle.toLowerCase() : 'invoice'
 
-  console.log(data)
+  console.log("download data",data)
 
   return (
     <PDFDownloadLink

@@ -1,14 +1,22 @@
 import { CSSProperties } from 'react'
-import { z, TypeOf } from 'zod'
+import { z, TypeOf, string } from 'zod'
 
 export interface ProductLine {
   description: string
+HSN_SAC:string
   quantity: string
+  CGST:string
+  SGST:string
   rate: string
 }
 
 export const TProductLine = z.object({
   description: z.string(),
+
+  HSN_SAC:z.string(),
+  
+  CGST:z.string(),
+  SGST:z.string(),
   quantity: z.string(),
   rate: z.string(),
 })
@@ -36,6 +44,8 @@ export const TInvoice = z.object({
   productLineDescription: z.string(),
   productLineQuantity: z.string(),
   productLineQuantityRate: z.string(),
+  productLineQuantitySGST: z.string(),
+  productLineQuantityCGST: z.string(),
   productLineQuantityAmount: z.string(),
   productLines: z.array(TProductLine),
   subTotalLabel: z.string(),

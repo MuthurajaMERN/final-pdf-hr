@@ -2,21 +2,24 @@ import { ProductLine, Invoice } from './types'
 
 export const initialProductLine: ProductLine = {
   description: '',
+  HSN_SAC: "",
   quantity: '',
+  CGST: "",
+  SGST: "",
   rate: '',
 }
 
 export const initialInvoice: Invoice = {
   logo: '',
   logoWidth: 100,
-  title: 'INVOICE',
+  title: '',
   companyName: 'Ultrafly Solution',
   name: '',
   companyAddress: 'Puliyamkulam',
-  companyAddress2: 'Covi',
+  companyAddress2: 'tamilnadu',
   companyCountry: 'India State',
   billTo: 'Bill To:',
-  clientName: '',
+  clientName: 'varun',
   clientAddress: '',
   clientAddress2: '',
   clientCountry: 'india',
@@ -29,18 +32,27 @@ export const initialInvoice: Invoice = {
   productLineDescription: 'Item Description',
   productLineQuantity: 'Qty',
   productLineQuantityRate: 'Rate',
+  productLineQuantityCGST: 'CGST',
+  productLineQuantitySGST: 'SGST',
   productLineQuantityAmount: 'Amount',
   productLines: [
     {
       description: '',
       quantity: '',
       rate: '',
+      HSN_SAC: '',
+      CGST: '',
+      SGST: ''
     },
     { ...initialProductLine },
     { ...initialProductLine },
   ],
   subTotalLabel: 'Sub Total',
   taxLabel: 'Sale Tax (10%)',
+  CGSTtaxLabel: 'CGST Tax (3%)',
+  SGSTtaxLabel: 'SGST Tax (3%)',
+
+
   totalLabel: 'TOTAL',
   currency: '$',
   notesLabel: 'Notes',

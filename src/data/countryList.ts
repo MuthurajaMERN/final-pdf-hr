@@ -48,7 +48,7 @@ const countryList = [
   { value: 'Guadeloupe', text: 'Guadeloupe' },
   { value: 'Japan', text: 'Japan' },
   { value: 'Guyana', text: 'Guyana' },
-  { value: 'Guernsey', text: 'Guernsey' },
+  { value: 'Guernsey', text: 'Guernsey' },  
   { value: 'French Guiana', text: 'French Guiana' },
   { value: 'Georgia', text: 'Georgia' },
   { value: 'Grenada', text: 'Grenada' },
