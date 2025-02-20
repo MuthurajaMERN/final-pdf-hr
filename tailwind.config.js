@@ -8,7 +8,4 @@ export default {
     extend: {},
   },
   plugins: [],
-  purge: ["./src/**/*.{js,ts,jsx,tsx}"], // Removes unused styles in production
 }
-
-  

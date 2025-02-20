@@ -29,6 +29,8 @@ export const TInvoice = z.object({
   name: z.string(),
   companyAddress: z.string(),
   companyAddress2: z.string(),
+  companyAddress3: z.string(),
+  GSTNO: z.string(),
   companyCountry: z.string(),
   billTo: z.string(),
   clientName: z.string(),
