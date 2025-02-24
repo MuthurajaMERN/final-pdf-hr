@@ -4,15 +4,15 @@ export const initialProductLine: ProductLine = {
   description: '',
   HSN_SAC: "",
   quantity: '',
-  CGST: "",
-  SGST: "",
+  CGST: "5%",
+  SGST: "5%",
   rate: '',
 }
 
 export const initialInvoice: Invoice = {
   logo: '',
-  logoWidth: 100,
-  title: '',
+  logoWidth: 500,
+  title: 'TAX INVOICE',
   companyName: 'Ultrafly Solution',
   name: '',
   companyAddress: 'Puliyamkulam',
@@ -51,8 +51,8 @@ export const initialInvoice: Invoice = {
   ],
   subTotalLabel: 'Sub Total',
   taxLabel: 'Sale Tax (10%)',
-  CGSTtaxLabel: 'CGST Tax (3%)',
-  SGSTtaxLabel: 'SGST Tax (3%)',
+  CGSTtaxLabel: 'CGST Tax (5%)',
+  SGSTtaxLabel: 'SGST Tax (5%)',
 
 
   totalLabel: 'TOTAL',
